@@ -8,21 +8,14 @@
 
 	<properties>
 		<tycho.version>0.25.0</tycho.version>
-
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 	</properties>
-<repositories>
-		<!-- configure p2 repository to resolve against -->
-		<!-- <repository> <id>EMF Compare</id> <layout>p2</layout> <url> http://download.eclipse.org/modeling/emf/compare/updates/releases/3.3/R201611041634/</url> 
-			</repository> -->
-
+	<repositories>
 		<repository>
 			<id>eclipse-project-luna</id>
 			<layout>p2</layout>
 			<url>http://download.eclipse.org/releases/luna</url>
 		</repository>
-	
-
 	</repositories>
 
 	<build>
@@ -35,27 +28,11 @@
 				<extensions>true</extensions>
 			</plugin>
 
-		<!-- 	<plugin>
-				<groupId>org.eclipse.tycho</groupId>
-				<artifactId>target-platform-configuration</artifactId>
-				<version>${tycho.version}</version>
-				<configuration>
-					<target>
-						<artifact>
-							<groupId>tycho_example</groupId>
-							<artifactId>com.codeandme.tycho.releng.targetplatform</artifactId>
-							<version>1.0.0-SNAPSHOT</version>
-						</artifact>
-					</target>
-					<environments>
-						<environment>
-							<os>win32</os>
-							<ws>win32</ws>
-							<arch>x86</arch>
-						</environment>
-					</environments>
-				</configuration>
-			</plugin> -->
+			<!-- <plugin> <groupId>org.eclipse.tycho</groupId> <artifactId>target-platform-configuration</artifactId> 
+				<version>${tycho.version}</version> <configuration> <target> <artifact> <groupId>tycho_example</groupId> 
+				<artifactId>com.codeandme.tycho.releng.targetplatform</artifactId> <version>1.0.0-SNAPSHOT</version> 
+				</artifact> </target> <environments> <environment> <os>win32</os> <ws>win32</ws> 
+				<arch>x86</arch> </environment> </environments> </configuration> </plugin> -->
 
 			<plugin>
 				<groupId>org.eclipse.tycho</groupId>
